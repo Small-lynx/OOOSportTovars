@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7108f855e6164f77a728e23b57bc54f6" Name="Diagram1">
+        <EntityTypeShape EntityType="SportTovarsModel.EdinicaIzmerenia" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportTovarsModel.Kategoria" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportTovarsModel.Postavchik" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportTovarsModel.Proizvoditel" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportTovarsModel.PynktVudachi" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportTovarsModel.Role" Width="1.5" PointX="1.5" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportTovarsModel.Tovar" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportTovarsModel.TovarZakaz" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportTovarsModel.User" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportTovarsModel.Zakaz" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <AssociationConnector Association="SportTovarsModel.FK_Tovar_EdinicaIzmerenia" ManuallyRouted="false" />
+        <AssociationConnector Association="SportTovarsModel.FK_Tovar_Kategoria" ManuallyRouted="false" />
+        <AssociationConnector Association="SportTovarsModel.FK_Tovar_Postavchik" ManuallyRouted="false" />
+        <AssociationConnector Association="SportTovarsModel.FK_Tovar_Proizvoditel" ManuallyRouted="false" />
+        <AssociationConnector Association="SportTovarsModel.FK_Zakaz_PynktVudachi" ManuallyRouted="false" />
+        <AssociationConnector Association="SportTovarsModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="SportTovarsModel.FK_TovarZakaz_Tovar" ManuallyRouted="false" />
+        <AssociationConnector Association="SportTovarsModel.FK_TovarZakaz_Zakaz" ManuallyRouted="false" />
+        <AssociationConnector Association="SportTovarsModel.FK_Zakaz_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
