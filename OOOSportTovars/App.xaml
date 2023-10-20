@@ -4,6 +4,18 @@
              xmlns:local="clr-namespace:OOOSportTovars"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="Title" >
+            <Setter Property ="Control.FontFamily" Value="Comic Sans MS"/>
+            <Setter Property ="Control.FontSize" Value="28"/>
+            <Setter Property ="Control.HorizontalAlignment" Value="Center"/>
+            <Setter Property ="Control.VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="Normal" BasedOn="{StaticResource Title}">
+            <Setter Property ="Control.FontSize" Value="20"/>
+        </Style>
+        <Style x:Key="Box">
+            <Setter Property ="Control.FontFamily" Value="Comic Sans MS"/>
+            <Setter Property ="Control.FontSize" Value="20"/>
+        </Style>
     </Application.Resources>
 </Application>

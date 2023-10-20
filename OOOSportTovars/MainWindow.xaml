@@ -5,8 +5,74 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOOSportTovars"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Авторизация" Height="450" Width="800" MinHeight="450" MinWidth="800" Icon="\Resouos\icon.ico" Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FFFFCC9A">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="\Resouos\logo.png"
+                   Width="80" Height="80"/>
+            <TextBlock Grid.Column="1" Text="Авторизация" 
+                       Style="{StaticResource Title}"/>
+            <Button Grid.Column="2"  
+                    x:Name="Exit" Content="Выход"
+                    Style="{StaticResource Title}"
+                    Click="Exit_Click" 
+                    Background="#FFCC6600"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Логин"
+                       Style="{StaticResource Normal}"
+                       Margin="20"
+                       HorizontalAlignment="Right" />
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="50,20" x:Name="Login"
+                     Style="{StaticResource Box}"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Пароль"
+                       Style="{StaticResource Normal}"
+                       Margin="20"
+                       HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" Margin="50,20" x:Name="PasswordTex"
+                         Style="{StaticResource Box}"/>
+                <PasswordBox Grid.Column="0" Margin="50,20" x:Name="PasswordPas"
+                         Style="{StaticResource Box}" />
+                <CheckBox Grid.Column="1" x:Name="VisiblePass" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="VisiblePass_Checked" Unchecked="VisiblePass_Unchecked" />
+            </Grid>
+            <Button Grid.Row="3" Grid.Column="0" 
+                    Content="Войти как гость"
+                    Style="{StaticResource Title}"
+                    Background="#FFCC6600"
+                    x:Name="Gost"/>
+            <Button Grid.Row="3" Grid.Column="1" 
+                    Content="Авторизация"
+                    Style="{StaticResource Title}"
+                    Background="#FFCC6600"
+                    x:Name="Start" Click="Start_Click"/>
+        </Grid>
+        <Grid Grid.Row="2" Background="#FFFFCC9A">
+        </Grid>
     </Grid>
 </Window>
